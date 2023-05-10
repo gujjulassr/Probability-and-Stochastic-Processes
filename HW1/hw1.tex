@@ -1,0 +1,175 @@
+
+
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+%\documentclass[conference]{IEEEtran}
+%\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{amsmath}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} % loads  TikZ and tkz-base
+\usepackage{listings}
+
+\graphicspath{ {./images/} }
+
+\DeclareMathOperator*{\Res}{Res}
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{}                                 %%
+
+\lstset{
+%language=C,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+
+
+\begin{document}
+%
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\bibliographystyle{IEEEtran}
+
+\providecommand{\mbf}{\mathbf}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
+\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
+\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\providecommand{\res}[1]{\Res\displaylimits_{#1}} 
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+
+\providecommand{\mtx}[1]{\mathbf{#1}}
+\providecommand{\mean}[1]{E\left[ #1 \right]}
+\providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
+
+\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
+	
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\cosec}{\,\text{cosec}\,}
+\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+
+\let\vec\mathbf
+
+\vspace{3cm}
+\title{
+
+Probability Assignment -I
+
+}
+\author{ Gujjula Samarasimha Reddy(AI23MTECH02001)$^{}$
+}	
+
+\maketitle
+\newpage
+
+\bigskip
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\textbf{Question:}\\
+Two dice are thrown at the same time. Find the probability of getting
+\begin{enumerate}
+     \item same number on both dice.
+     \item different numbers on both dice.
+\end{enumerate}
+ \textbf{Solution:}\\ \\ 
+ \underline {(1)} \\ \\
+ Let S represents the total sample space when two dice are rolled
+ \\Then \\ \\
+ $ S \in    \begin{Bmatrix}
+             (1,1)& (1,2)& (1,3)& (1,4)& (1,5)& (1,6)\\
+             (2,1)& (2,2)& (2,3)& (2,4)& (2,5)& (2,6)\\
+             (3,1)& (3,2)& (3,3)& (3,4)& (3,5)& (3,6)\\
+             (4,1)& (4,2)& (4,3)& (4,4)& (4,5)& (4,6)\\
+             (5,1)& (5,2)& (5,3)& (5,4)& (5,5)& (5,6)\\
+             (6,1)& (6,2)& (6,3)& (6,4)& (6,5)& (6,6)
+    \end{Bmatrix}$ \\ \\ \\
+
+
+
+
+
+\noindent There are total 36 possible outcomes when two dice are rolled and altogether represents the samplespace
+mages\\
+
+\noindent Let A be the event that represents getting  same number on the both the dice \\
+     $A \in \{(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)\}$ \\
+
+     \noindent There are total 6 possible outcomes that all together represents the event A\\
+     
+
+    \includegraphics{dice}
+
+    \begin{align*}
+        \pr{A}=\frac{6}{36}\\
+        \pr{A}=\frac{1}{6}
+   \end{align*}
+
+
+   \underline {(2)} \\ \\
+
+   \noindent From the above analysis we got to know that the propbability of getting same number as 
+   \begin{align*}
+    \pr{A}=\frac{1}{6}
+\end{align*}
+
+\noindent Let define {B} i\noindent s an event of getting different number on both the dice when they are rolled\\
+Events {A} and {B} are mutually exclusive 
+
+\noindent As we defined only two events on whole sample space and they are mutually exclusive  $ \colon $ 
+
+\begin{align*}
+ {A \cap B = \emptyset} \\
+ \pr{A \cap B}={0}\\
+ \therefore \pr{A \cup B}=\pr{A}+\pr{B}\\
+ \pr{A} + \pr{B} = {1} \\
+ \pr{B} = {1}-\pr{A} \\
+ \pr{B}={1}-\frac{1}{6}\\
+ \pr{B}=\frac{5}{6}
+\end{align*}
+\end{document}
