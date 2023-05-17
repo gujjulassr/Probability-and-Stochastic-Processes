@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.4.30)  10 MAY 2023 10:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.4.30)  17 MAY 2023 12:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1152,6 +1152,8 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 48.
 LaTeX Info: Redefining \pageref on input line 48.
 LaTeX Info: Redefining \nameref on input line 48.
+
+(./hw1.out) (./hw1.out)
 \@outlinefile=\write4
 \openout4 = `hw1.out'.
 
@@ -1242,20 +1244,20 @@ File: dice.pdf Graphic file (type pdf)
 Package pdftex.def Info: dice.pdf  used on input line 146.
 (pdftex.def)             Requested size: 258.96684pt x 86.32227pt.
 
-Overfull \hbox (18.96684pt too wide) in paragraph at lines 146--147
-[][] 
+Overfull \hbox (6.96684pt too wide) in paragraph at lines 146--147
+ [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
@@ -1263,19 +1265,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--155
 
 
  </usr/share/texlive/texmf-dist/tex/latex/epsdice/dice.pdf>] (./hw1.aux)
-
-Package rerunfilecheck Warning: File `hw1.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `hw1.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `hw1.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 29072 strings out of 478287
- 573944 string characters out of 5849289
- 840756 words of memory out of 5000000
+ 29076 strings out of 478287
+ 573976 string characters out of 5849289
+ 840808 words of memory out of 5000000
  46672 multiletter control sequences out of 15000+600000
  534888 words of font info for 170 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1288,7 +1284,7 @@ onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on hw1.pdf (1 page, 49828 bytes).
+Output written on hw1.pdf (1 page, 49826 bytes).
 PDF statistics:
  62 PDF objects out of 1000 (max. 8388607)
  41 compressed objects within 1 object stream
