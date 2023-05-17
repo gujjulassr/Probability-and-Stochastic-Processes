@@ -21,6 +21,7 @@
 \usepackage[breaklinks=true]{hyperref}
 \usepackage{tkz-euclide} % loads  TikZ and tkz-base
 \usepackage{listings}
+\usepackage{caption}
 
 \graphicspath{ {./images/} }
 
@@ -173,4 +174,22 @@ Events {A} and {B} are mutually exclusive
  \pr{B}={1}-\frac{1}{6}\\
  \pr{B}=\frac{5}{6}
 \end{align*}
+
+
+
+\begin{table}[!htbp]
+     \renewcommand{\arraystretch}{1.3}
+     \caption*{Probability of Dice Outcomes}
+     \centering
+     \begin{tabular}{|c|c|p{4.2cm}|}
+     \hline
+     \textbf{Parameter} & \textbf{Value} & \textbf{Description} \\
+     \hline
+     Same number on both dice & $\frac{1}{6}$ & The probability of getting the same number on both dice. \\
+     \hline
+     Different numbers on both dice & $\frac{5}{12}$ & The probability of getting different numbers on both dice. \\
+     \hline
+     \end{tabular}
+     \end{table}
+     
 \end{document}
